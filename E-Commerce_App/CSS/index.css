@@ -57,6 +57,11 @@ a{
     text-decoration: none;
     font-size: 1.2em;
     color: black;
+    transition: 2s;
+}
+a:hover{
+    text-decoration: underline;
+   
 }
 #Search{
     width: 30vw;
@@ -92,12 +97,13 @@ main{
     height: 86vh;
     background-color: rgba(128, 128, 128, 0.277);
 }
-#section-Head{
+.section-Head{
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var( --font-family);
 }
 section{
     /* display: grid; */
@@ -107,4 +113,88 @@ section{
     /* grid-template-columns: repeat(4,23%);
     grid-template-rows: repeat(2,40vh); */
    justify-content: space-around;
+
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 20%;
+    height: 100%;
+    font-family: var(--font-family);
+    font-weight: 200;
+    color: white;
+    background-image: url("https://gimgs2.nohat.cc/thumb/f/640/dark-blue-product-background-free-photo--6e7213af8b2b41e7a10c.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+.images {
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+    border-bottom: 5px solid rgb(158, 144, 144);
+    border-radius: 50px;
+
+}
+.images:hover{
+  width: 325px;
+  height: 325px;
+}
+section2{
+    /* display: grid; */
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    /* grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2,40vh); */
+   justify-content: space-around;
+}
+.name{
+    text-align: center;
+}
+
+#main-section{
+    width: 100%;
+    /* height: auto; */
+   background-color: pink;
+}
+
+.rating{
+    display: flex;
+}
+/* ------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>DESIGNINING PRODUCT<<<<<<<<<<<<<<<<<<<<<<<<<<------------------------------------  */
+.leftarrow{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    transition: 1s;
+}
+.leftarrow:hover{
+    transform: rotate(-180deg);
+}
+
+#Product-section{
+    width: 100%;
+    height: 100vh;
+    margin-top: 15px;
+    display: flex;
+}
+
+.product_image{
+   width: 500px;
+   height: 500px;
+   border: 2px solid black;
+}
+.Product-description{
+    width: 45%;
+    height: 75%;
+}
+.Product-description,.Product-image{
+    border: 1px solid gray;
 }
