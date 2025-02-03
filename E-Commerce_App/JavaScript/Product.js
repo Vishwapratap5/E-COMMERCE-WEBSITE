@@ -69,14 +69,17 @@ const buybtn = document.createElement("button");
 product_section.appendChild(product_description_div);
 // ------------------------------------------------------------------------------------------------------------------------------
 const review_div = document.createElement("div");
-
 for (let m = 0; m < product.reviews.length; m++) {
+    let rating_stars="";
     const review = product.reviews[m]; // Access the current review object
+    for(let p=0;p<(review.rating);p++){
+        rating_stars+="⭐";
+    }
 
     const reviewElement = document.createElement("div");
     reviewElement.innerHTML = `
         <h3>${review.reviewerName}</h3>
-        <p><strong>Rating:</strong> ${review.rating}</p>
+        <h3>ratings: ${rating_stars}</h3>
         <p><strong>Comment:</strong> ${review.comment}</p>
         <p><strong>Date:</strong> ${review.date}</p>
     `;

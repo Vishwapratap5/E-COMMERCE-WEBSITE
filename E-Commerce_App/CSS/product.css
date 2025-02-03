@@ -123,6 +123,7 @@ button{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   border-bottom: 5px solid rgb(158, 144, 144);
 }
 .Description{
     display: flex;
@@ -167,6 +168,11 @@ button{
 }
 
 /* Container for all reviews */
+.User_reviews{
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+}
 .user_reviews {
     margin-top: 30px;
     padding: 20px;
@@ -177,9 +183,12 @@ button{
 
 /* Individual review container */
 .user_div {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px; /* Space between reviews */
+    width: 100%;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: auto;
+    font-family: var(--font-family);
 }
 
 /* Individual review styling */
@@ -215,8 +224,9 @@ button{
     font-weight: 600;
 }
 
-/* Rating stars styling */
-.user_div .rating-stars {
-    color: #ffc107; /* Gold color for stars */
-    font-size: 1rem;
+.comment{
+    font-family: var(--font-family);
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
 }
