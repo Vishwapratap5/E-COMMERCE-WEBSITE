@@ -61,6 +61,9 @@ window.addEventListener("load",async ()=>{
     const top_product_name=document.createElement("h2");
     const top_product_rating=document.createElement("p");
     const top_product_price=document.createElement("h2");
+    const top_product_link=document.createElement("a");
+    top_product_link.setAttribute("href",`Product.html?Id=${data2.products[i].id}`);
+top_product_link.appendChild(top_product_img);
     //-----------------------------------------------------------------------
     const link=(data2.products[i].images[0]);
      top_product_img.setAttribute("src",link);
@@ -84,7 +87,7 @@ window.addEventListener("load",async ()=>{
     //----------------------------------------------------------------------
         top_arrivals.className="boxes";
      //----------------------------------------------------------------------
-   top_arrivals.append(top_product_img,top_product_name,top_product_rating,top_product_price);
+   top_arrivals.append(top_product_link,top_product_name,top_product_rating,top_product_price);
    section2.appendChild(top_arrivals);
     }
 });
