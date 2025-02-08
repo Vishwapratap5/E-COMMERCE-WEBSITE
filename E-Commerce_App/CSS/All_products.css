@@ -86,120 +86,13 @@ a:hover{
     position: relative;
     right: 30px;
 }
+
 button{
     background: none;
     border: none;
     position: relative;
     left: 70px;
     top: 10px;
-}
-
-main{
-    width: 100%;
-    height: 86vh;
-    background-color: rgba(128, 128, 128, 0.277);
-}
-.section-Head{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var( --font-family);
-}
-section{
-    /* display: grid; */
-    display: flex;
-    width: 100%;
-    height: 45vh;
-    /* grid-template-columns: repeat(4,23%);
-    grid-template-rows: repeat(2,40vh); */
-   justify-content: space-around;
-}
-
-.boxes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid black;
-    border-radius: 50px;
-    width: 20%;
-    height: 100%;
-    font-family: var(--font-family);
-    font-weight: 200;
-    color: white;
-    background-image: url("https://gimgs2.nohat.cc/thumb/f/640/dark-blue-product-background-free-photo--6e7213af8b2b41e7a10c.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5px;
-}
-.images {
-    width: 300px;
-    height: 300px;
-    transition: 1s;
-    border-bottom: 5px solid rgb(158, 144, 144);
-    border-radius: 50px;
-
-}
-.images:hover{
-  width: 325px;
-  height: 325px;
-}
-section2{
-    /* display: grid; */
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    /* grid-template-columns: repeat(4,23%);
-    grid-template-rows: repeat(2,40vh); */
-   justify-content: space-around;
- 
-}
-.name{
-    text-align: center;
-}
-
-#main-section{
-    width: 100%;
-    /* height: auto; */
-   background-color: pink;
-}
-
-.rating{
-    display: flex;
-}
-
-.section3{
-    width: 100%;
-    height: 50vh;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-   justify-content: space-around;
-}
-.Select_jwellery h1{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 10px;
-    font-family: var(--font-family);
-}
-.Select_Category{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: small;
-}
-
-.DataBox{
-    width: 50%;
-    height: 30vh;
 }
 
 .list{
@@ -222,4 +115,61 @@ section2{
    border-radius: 15px;
    margin-right: 150px;
 }
+section{
+    display: grid;
+    /* display: flex; */
+    width: 100%;
+    /* height: 45vh; */
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* grid-template-rows: repeat(2,40vh); */
+   justify-content: space-around;
+   gap: 50px;
+   /* margin: 100px; */
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
 
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+    font-weight: 200;
+    color: white;
+    background-image: url("https://gimgs2.nohat.cc/thumb/f/640/dark-blue-product-background-free-photo--6e7213af8b2b41e7a10c.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+.images {
+    width: 250px;
+    height: 200px;
+    transition: 1s;
+    border-bottom: 5px solid rgb(158, 144, 144);
+    border-radius: 50px;
+
+}
+.images:hover{
+  width: 325px;
+  height: 325px;
+}
+
+.leftarrow{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    transition: 1s;
+}
+.leftarrow:hover{
+    transform: rotate(-180deg);
+}
+.title{
+    text-align: center;
+    font-family: var(--font-family);
+}
